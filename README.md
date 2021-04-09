@@ -15,6 +15,6 @@ To recap:
 
 ## Complications
 
-1. Because www.sudoku.com uses dynamically loaded puzzles using JavaScript I couldn't use the requests module to simply get the puzzle's html from the url of the page. One solution to this would be to use the selenium web-based automated testing tool to hook into the browser's driver to wait for the content to be ready and then pass that data into BS4. This would be a much cleaner solution than downloading the webpage to pass into BS4 however selenium does not yet allow users to hook into already active browswer sessions (cleanly).
+1. Because www.sudoku.com dynamically loads their puzzles I couldn't use the requests module to simply get the puzzle's html from the url of the page. One solution to this would be to use the selenium web-based automated testing tool to hook into the browser's driver to wait for the content to be ready and then pass that data into BS4. This would be a much cleaner solution than downloading the webpage to pass into BS4 however selenium does not yet allow users to hook into already active browswer sessions (cleanly).
   
  2. www.sudoku.com uses svg drawings of their numbers instead of css formatted numbers which made parsing out the puzzle data a bit harder than normal. I solved this by adding a dictionary that aliased the svg pathing information for each number to the normal integer represenation.
