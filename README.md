@@ -1,4 +1,4 @@
-# AutomaticSudokuSolver
+# Automatic Sudoku Solver
 Automatically solves and inputs the solution into puzzles from www.sudoku.com.
 
 ![Example of solved puzzle](images/sudoku_solving.gif)
